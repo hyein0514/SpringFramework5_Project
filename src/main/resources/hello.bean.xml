@@ -14,5 +14,10 @@
 	
 	<!-- Hello 클래스를  Spring Bean으로 설정 Setter Injection 방식 -->
 	<bean id="hello" class="myspring.di.xml.Hello">
+		<!-- setName() 메서드 호출 -->
+		<property name="name" value="스프링" />
+		<!-- setPrinter() 메서드 호출 -->
+		<property name="printer" ref="strPrinter" />
 	</bean>
+	
 </beans>
